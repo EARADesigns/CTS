@@ -1,0 +1,206 @@
+<!--
+Author: EARA Designs
+Author URL: http://www.earadesigns.co.za
+License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cape Town Shuttles | Home </title>
+        <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="css/slider.css" rel="stylesheet" type="text/css"  media="all" />
+        <link href="jqueryui-css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css"  media="all" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        
+        <script type="text/javascript" src="js/camera.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function() {
+                jQuery('#camera_wrap_1').camera({
+                    height: '500px',
+                    pagination: false,
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+                });
+            });
+        </script>
+        <script>
+            jQuery(document).ready(function($) {
+                $( "#name" ).datepicker({
+                inline: true
+                });
+            });
+        </script>
+  
+  <script>
+      $(document).ready(function(){
+    
+    $('#booknow').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('#bookingform').slideDown( "slow");
+        $(this).text('Enquiry Form');
+
+    });
+    
+    $('#bookingform').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    $('html').click( function() {
+       
+        $('#bookingform').slideUp("fast");
+        $('#booknow').text('Make a Booking');
+
+        
+    });
+    
+    
+});
+  </script>
+    </head>
+    <body>
+
+        <div class="header"  id="top">
+            <div class="wrap">
+                <!---start-logo---->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+                </div>
+                <!---End-logo---->
+                <!---start-top-nav---->
+                <div class="top-nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="whatwe.html">What we do</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="clear"> </div>
+                    </ul>
+                </div>
+                <div class="clear"> </div>
+                <!---End-top-nav---->
+            </div>
+        </div>
+        <!---End-header----->
+        <!--start-image-slider---->
+        <div class="slider">					     
+            <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">									           
+                <div data-src="images/slider3.jpg">  </div> 
+                <div data-src="images/slider2.jpg">  </div>
+                <div data-src="images/slider1.jpg">  </div>
+                <div data-src="images/slider2.jpg">  </div>
+            </div>
+            <div class="clear"> </div>					       
+        </div>					
+        <!--End-image-slider---->
+        <!-- Booking Form -->
+        <div class='content'>
+            <div class='row' id='booking'><a href="#" id="booknow">Make a Booking</a></div>
+            <div class="bookingform" id="bookingform">
+                <div class="wrap">
+                    <form>
+                        <label for="name" id="namelbl">Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="surname" id="surnamelbl">Surname</label>
+                        <input type="text" id="surname" name="surname">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!---start-content---->
+        <div class="content">
+            <div class="top-grids">
+                <div class="wrap">
+                    <h3>THE LARGEST TAXI SERVICES</h3>
+                    <h2>CITY TAXI</h2>
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a class="what" href="#">What we do?</a></li>
+                        <li><a class="join" href="#">Join us</a></li>
+                        <div class="clear"> </div>
+                    </ul>
+                </div>
+            </div>
+                  <div class="mid-grid">
+                <div class="wrap">
+                    <div class="middle-content">
+                        <h3>REPAIRS</h3>
+                        <a href="#"><img src="images/repair.png" title="repair" /></a>
+                        <h4>It long established</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                        <a class="button" href="#">More</a>
+                    </div>
+                    <div class="middle-content">
+                        <h3>SPARES</h3>
+                        <a href="#"><img src="images/spares.png" title="spares" /></a>
+                        <h4>It long established</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                        <a class="button" href="#">More</a>
+                    </div>
+                    <div class="middle-content">
+                        <h3>SALES</h3>
+                        <a href="#"><img src="images/sales.png" title="sales" /></a>
+                        <h4>It long established</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <a class="button" href="#">More</a>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+             <div class="mid-grid1">
+                <div class="wrap">
+                    <div class="row">
+                        <form>
+                            <label for="Name">Name</label>
+                            <input type="text" id="name" name='text' required>
+                        </form>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+            <div class="bottom-grids">
+                <div class="wrap">
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Google+</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-no">
+                        <span>+91 123 456789</span>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="#">CITY TAXI</a>
+                    </div>
+                    <div class="copy-right">
+                        <p>Design by <a href="http://earadesigns.co.za/">EARA Designs</a></p>
+                    </div>
+                    <div class="top-to-page">
+                        <a href="#top" class="scroll"> </a>
+                        <div class="clear"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---End-contnet---->
+    </div>
+    <!---End-wrap----->
+</body>
+</html>
+
