@@ -8,9 +8,13 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
 <html>
 	<head>
 		<title>CITY TAXI Website Template | Services :: W3layouts</title>
-		<link href="web/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"  media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="jqueryui-css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css"  media="all" />
 		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		  <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
 		  <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -19,6 +23,13 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
 				});
 			});
 		</script>
+		  <script>
+            jQuery(document).ready(function($) {
+                $( "#date" ).datepicker({
+                inline: true
+                });
+            });
+        </script>
 	</head>
 	<body>
 		<!---strat-wrap----->
@@ -28,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
 				<div class="wrap">
 					<!---start-logo---->
 					<div class="logo">
-						<a href="index.html"><img src="web/images/logo1.png" title="logo" /></a>
+						<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
 					</div>
 					<!---End-logo---->
 					<!---start-top-nav---->
@@ -49,78 +60,78 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
 			<!---End-header----->
 		 <!---start-contnet---->
 		 <div class="content">
-		 	<!---strart-services----->
+		 	<!---strart-services-->
 		 	<div class="services">
 		 		<div class="wrap">
   				<h4>Our services</h4>
   					<div class="section group">
-						<div class="col images_1_of_5">
-							 <img src="web/images/tyre.png">
-							 <h2>Tire Sales</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-					   </div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/repair.png">
-							 <h2>Repair</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-					    </div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/complete.png">
-							 <h2>Battery problems</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-						</div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/spares.png">
-							 <h2>Spare parts</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-						</div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/sales.png">
-							 <h2>Sales &amp; Services</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-						</div>
-					</div>
-					<div class="section group">
-						<div class="col images_1_of_5">
-							 <img src="web/images/ele.png">
-							 <h2>Electrical Systems</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-					   </div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/dig.png">
-							 <h2>Engine Diagnostics</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-					    </div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/flued.png">
-							 <h2>Fluid Exchange Services</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-						</div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/col.png">
-							 <h2>Coolant Systems</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
-						</div>
-						<div class="col images_1_of_5">
-							 <img src="web/images/air.png">
-							 <h2>Air Conditioning</h2>
-							 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						     <div class="button"><span><a href="#">Read More</a></span></div>
+						<div class="row">
+						  <div class="col-xs-6">
+
+						  	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, vel, cursus eleifend, elit. Aenean auctor wisi et urna.<br>
+							<br>
+						  	Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.<br>
+							<br>
+						  	Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan male</p>
+
+						  </div>
+						  <div class="col-xs-6">
+
+							<form role="form">
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Name</label>
+							    <input type="email" class="form-control" id="name" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Email address</label>
+							    <input type="email" class="form-control" id="email" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Tel:</label>
+							    <input type="email" class="form-control" id="tel" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">No. of Passengers</label>
+							    <input type="email" class="form-control" id="passengers" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">From Where</label>
+							    <input type="email" class="form-control" id="from" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">To Where</label>
+							    <input type="email" class="form-control" id="to" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Date/ Time</label>
+							    <input type="email" class="form-control" id="date" placeholder="Enter email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Comments</label>
+							    <input type="email" class="form-control" id="comments" placeholder="Enter email">
+							  </div>
+
+							  <div class="checkbox">
+							    <label>
+							      <input type="checkbox"> I accept the privacy policy
+							    </label>
+							    </div>
+							     <div class="checkbox">
+							    <label>
+							      <input type="checkbox"> I agree to the T and C's 
+							    </label>
+							  	</div>
+
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							</div>
+						  </div>
 						</div>
 					</div>
 			</div>
-			</div>
+			
 		 	<!---End-services----->
-		 	<!---End-about-us----->
+		 	<!---End-about-us-->
 		 	<div class="bottom-grids">
 		 		<div class="wrap">
 		 		<div class="social-links">
@@ -132,13 +143,13 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
 		 			</ul>
 		 		</div>
 		 		<div class="mobile-no">
-		 			 <span>+91 123 456789</span>
+		 			 <span>+27(0) 21 556 5606</span>
 		 		</div>
 		 		<div class="footer-logo">
 		 			<a href="#">CITY TAXI</a>
 		 		</div>
 		 		<div class="copy-right">
-		 			<p>Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+		 			<p>Design by <a href="http://www.earadesigns.co.za/" target="_blank"><img style="margin-bottom : 5px;" src="images/EARADesignsLogo.png" alt="earadesignslogo"></a></p>
 		 		</div>
 		 		<div class="top-to-page">
 						<a href="#top" class="scroll"> </a>

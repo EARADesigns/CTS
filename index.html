@@ -11,6 +11,8 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
         <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href="css/slider.css" rel="stylesheet" type="text/css"  media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"  media="all" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"  media="all" />
         <link href="jqueryui-css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css"  media="all" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -35,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
         </script>
         <script>
             jQuery(document).ready(function($) {
-                $( "#name" ).datepicker({
+                $( "#date" ).datepicker({
                 inline: true
                 });
             });
@@ -75,8 +77,8 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
         <div class="header"  id="top">
             <div class="wrap">
                 <!---start-logo---->
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+                <div class="logo" style="color:#56E8F0;margin-top: 0.3em;">
+                    <h1 style="font-size: 63px;">CAPE TOWN SHUTTLES</h1>
                 </div>
                 <!---End-logo---->
                 <!---start-top-nav---->
@@ -85,7 +87,7 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="whatwe.html">What we do</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="index.html">New</a></li>
                         <div class="clear"> </div>
@@ -99,34 +101,93 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
         <!--start-image-slider---->
         <div class="slider">					     
             <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">									           
-                <div data-src="images/slider3.jpg">  </div> 
-                <div data-src="images/slider2.jpg">  </div>
-                <div data-src="images/slider1.jpg">  </div>
-                <div data-src="images/slider2.jpg">  </div>
+                <div data-src="images/m3.jpg">  </div> 
+                <div data-src="images/m2.jpg">  </div>
+                <div data-src="images/m1.jpg">  </div>
+                <div data-src="images/m2.jpg">  </div>
             </div>
             <div class="clear"> </div>					       
         </div>					
         <!--End-image-slider---->
         <!-- Booking Form -->
         <div class='content'>
-            <div class='row' id='booking'><a href="#" id="booknow">Make a Booking</a></div>
+            <div class='row' id='booking' style="width: 101%;"><a href="#" id="booknow">Make a Booking</a></div>
             <div class="bookingform" id="bookingform">
-                <div class="wrap">
-                    <form>
-                        <label for="name" id="namelbl">Name</label>
-                        <input type="text" id="name" name="name">
-                        <label for="surname" id="surnamelbl">Surname</label>
-                        <input type="text" id="surname" name="surname">
-                    </form>
-                </div>
+               
+                <div class="section group" style="margin-left:20px;margin-right:10px;color:#56E8F0;">
+                        <div class="row">
+                          <div class="col-xs-6">
+
+                          <form role="form">
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="email" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Tel:</label>
+                                <input type="email" class="form-control" id="tel" placeholder="Enter tel tell number">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">From Where</label>
+                                <input type="email" class="form-control" id="from" placeholder="Enter from where">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Date/ Time</label>
+                                <input type="email" class="form-control" id="date" placeholder="Enter date">
+                            </div>
+
+                          </form>
+
+                          </div>
+                          <div class="col-xs-6">
+
+                            <form role="form">
+                              
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                              </div>
+                              
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">No. of Passengers</label>
+                                <input type="email" class="form-control" id="passengers" placeholder="Enter number of passengers">
+                              </div>
+                              
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">To Where</label>
+                                <input type="email" class="form-control" id="to" placeholder="Enter to where">
+                              </div>
+                              
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Comments</label>
+                                <input type="email" class="form-control" id="comments" placeholder="Enter comments">
+                              </div>
+
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> I accept the privacy policy
+                                </label>
+                                </div>
+                                 <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> I agree to the T and C's 
+                                </label>
+                                </div>
+
+                              <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+
             </div>
         </div>
         <!---start-content---->
         <div class="content">
-            <div class="top-grids">
+            <div class="top-grids" style="background: url(images/t1.png) no-repeat 78% 71% #3ec4eb;">
                 <div class="wrap">
-                    <h3>THE LARGEST TAXI SERVICES</h3>
-                    <h2>Cape Town Shuttles</h2>
+                    <h2 style="font-size: 5em;">Cape Town Shuttles</h2>
                     <h4>COMPANY</h4>
                     <ul>
                         <li><a class="what" href="#">What we do?</a></li>
@@ -138,22 +199,22 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
                   <div class="mid-grid">
                 <div class="wrap">
                     <div class="middle-content">
-                        <h3>REPAIRS</h3>
+                        <h3>Lorem ipsum</h3>
                         <a href="#"><img src="images/repair.png" title="repair" /></a>
                         <h4>It long established</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
                         <a class="button" href="#">More</a>
                     </div>
                     <div class="middle-content">
-                        <h3>SPARES</h3>
-                        <a href="#"><img src="images/spares.png" title="spares" /></a>
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="images/repair.png" title="repair" /></a>
                         <h4>It long established</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
                         <a class="button" href="#">More</a>
                     </div>
                     <div class="middle-content">
-                        <h3>SALES</h3>
-                        <a href="#"><img src="images/sales.png" title="sales" /></a>
+                        <h3>Lorem ipsum</h3>
+                        <a href="#"><img src="images/repair.png" title="repair" /></a>
                         <h4>It long established</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                         <a class="button" href="#">More</a>
@@ -164,10 +225,7 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
              <div class="mid-grid1">
                 <div class="wrap">
                     <div class="row">
-                        <form>
-                            <label for="Name">Name</label>
-                            <input type="text" id="name" name='text' required>
-                        </form>
+                       
                     </div>
                     <div class="clear"> </div>
                 </div>
@@ -183,13 +241,13 @@ License URL: http://creativecommons.org/licenses/by-nc-nd/4.0/
                         </ul>
                     </div>
                     <div class="mobile-no">
-                        <span>+91 123 456789</span>
+                        <span>00000000000000</span>
                     </div>
                     <div class="footer-logo">
-                        <a href="#">CITY TAXI</a>
+                        <a href="#">CAPE TOWN SHUTTLES</a>
                     </div>
                     <div class="copy-right">
-                        <p>Design by <a href="http://earadesigns.co.za/">EARA Designs</a></p>
+                        <p>Design by <a href="http://www.earadesigns.co.za/" target="_blank"><img style="margin-bottom : 5px;" src="images/EARADesignsLogo.png" alt="earadesignslogo"></a></p>
                     </div>
                     <div class="top-to-page">
                         <a href="#top" class="scroll"> </a>
