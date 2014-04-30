@@ -2,6 +2,8 @@
 	border-top:5px solid #3ec4eb;
 	border-left:none;
 	border-right:none;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 .camera_wrap a, .camera_wrap img, 
 .camera_wrap ol, .camera_wrap ul, .camera_wrap li,
